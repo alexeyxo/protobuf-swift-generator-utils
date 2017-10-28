@@ -161,13 +161,13 @@ func readFileData(filename: String) throws -> Data {
 
 
 public final class CodeWriter {
-    let file:Google.Protobuf.FileDescriptorProto
+    public let file:Google.Protobuf.FileDescriptorProto
     fileprivate var suffix = ""
-    init(file:Google.Protobuf.FileDescriptorProto, suffix:String = "") {
+    public init(file:Google.Protobuf.FileDescriptorProto, suffix:String = "") {
         self.file = file
         self.suffix = suffix
     }
-    var outputFile:String {
+    public var outputFile:String {
         var fileName = ""
         if self.file.hasPackage {
             fileName = self.file.package.capitalizedCamelCase() + "."

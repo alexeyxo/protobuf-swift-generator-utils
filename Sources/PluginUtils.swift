@@ -7,7 +7,7 @@
 
 import Foundation
 import ProtocolBuffers
-func GetOptions(_ desc:Google.Protobuf.DescriptorProto) -> Google.Protobuf.SwiftMessageOptions? {
+public func GetOptions(_ desc:Google.Protobuf.DescriptorProto) -> Google.Protobuf.SwiftMessageOptions? {
     if desc.options != nil {
         if desc.options.hasExtension(extensions: Google.Protobuf.SwiftDescriptorRoot.swiftMessageOptions()),
             let option = desc.options.getExtension(extensions: Google.Protobuf.SwiftDescriptorRoot.swiftMessageOptions()) as? Google.Protobuf.SwiftMessageOptions {
@@ -17,7 +17,7 @@ func GetOptions(_ desc:Google.Protobuf.DescriptorProto) -> Google.Protobuf.Swift
     return nil
 }
 
-func GetOptions(_ desc:Google.Protobuf.FileDescriptorProto) -> Google.Protobuf.SwiftFileOptions? {
+public func GetOptions(_ desc:Google.Protobuf.FileDescriptorProto) -> Google.Protobuf.SwiftFileOptions? {
     if desc.options != nil {
         if desc.options.hasExtension(extensions: Google.Protobuf.SwiftDescriptorRoot.swiftFileOptions()),
             let option = desc.options.getExtension(extensions: Google.Protobuf.SwiftDescriptorRoot.swiftFileOptions()) as? Google.Protobuf.SwiftFileOptions {
@@ -28,7 +28,7 @@ func GetOptions(_ desc:Google.Protobuf.FileDescriptorProto) -> Google.Protobuf.S
 }
 
 
-func GetOptions(_ desc:Google.Protobuf.EnumDescriptorProto) -> Google.Protobuf.SwiftEnumOptions? {
+public func GetOptions(_ desc:Google.Protobuf.EnumDescriptorProto) -> Google.Protobuf.SwiftEnumOptions? {
     if desc.options != nil {
         if desc.options.hasExtension(extensions: Google.Protobuf.SwiftDescriptorRoot.swiftEnumOptions()),
             let option = desc.options.getExtension(extensions: Google.Protobuf.SwiftDescriptorRoot.swiftEnumOptions()) as? Google.Protobuf.SwiftEnumOptions {
@@ -38,7 +38,7 @@ func GetOptions(_ desc:Google.Protobuf.EnumDescriptorProto) -> Google.Protobuf.S
     return nil
 }
 
-func GetOptions(_ desc:Google.Protobuf.FieldDescriptorProto) -> Google.Protobuf.SwiftFieldOptions? {
+public func GetOptions(_ desc:Google.Protobuf.FieldDescriptorProto) -> Google.Protobuf.SwiftFieldOptions? {
     if desc.options != nil {
         if desc.options.hasExtension(extensions: Google.Protobuf.SwiftDescriptorRoot.swiftFieldOptions()),
             let option = desc.options.getExtension(extensions: Google.Protobuf.SwiftDescriptorRoot.swiftFieldOptions()) as? Google.Protobuf.SwiftFieldOptions {
@@ -48,7 +48,7 @@ func GetOptions(_ desc:Google.Protobuf.FieldDescriptorProto) -> Google.Protobuf.
     return nil
 }
 
-func IsPrimaryKey(_ desc:Google.Protobuf.FieldDescriptorProto) -> Bool {
+public func IsPrimaryKey(_ desc:Google.Protobuf.FieldDescriptorProto) -> Bool {
     if desc.options != nil {
         if desc.options.hasExtension(extensions: Google.Protobuf.SwiftDescriptorRoot.swiftFieldOptions()),
             let option = desc.options.getExtension(extensions: Google.Protobuf.SwiftDescriptorRoot.swiftFieldOptions()) as? Google.Protobuf.SwiftFieldOptions {
@@ -60,7 +60,7 @@ func IsPrimaryKey(_ desc:Google.Protobuf.FieldDescriptorProto) -> Bool {
     return false
 }
 
-func IsIndexedProperty(_ desc:Google.Protobuf.FieldDescriptorProto) -> Bool {
+public func IsIndexedProperty(_ desc:Google.Protobuf.FieldDescriptorProto) -> Bool {
     if desc.options != nil {
         if desc.options.hasExtension(extensions: Google.Protobuf.SwiftDescriptorRoot.swiftFieldOptions()),
             let option = desc.options.getExtension(extensions: Google.Protobuf.SwiftDescriptorRoot.swiftFieldOptions()) as? Google.Protobuf.SwiftFieldOptions {
@@ -76,14 +76,14 @@ func IsIndexedProperty(_ desc:Google.Protobuf.FieldDescriptorProto) -> Bool {
     return false
 }
 
-func IsMapEntry(_ desc:Google.Protobuf.DescriptorProto) -> Bool {
+public func IsMapEntry(_ desc:Google.Protobuf.DescriptorProto) -> Bool {
     if desc.options != nil && desc.options.hasMapEntry {
         return desc.options.mapEntry
     }
     return false
 }
 
-func IsMapField(_ desc:Google.Protobuf.FieldDescriptorProto, parentDesc:Google.Protobuf.DescriptorProto) -> Bool {
+public func IsMapField(_ desc:Google.Protobuf.FieldDescriptorProto, parentDesc:Google.Protobuf.DescriptorProto) -> Bool {
     guard desc.label == .labelRepeated  else {
         return false
     }
@@ -100,7 +100,7 @@ func IsMapField(_ desc:Google.Protobuf.FieldDescriptorProto, parentDesc:Google.P
 }
 
 
-func AccessControl(_ desc:Google.Protobuf.FileDescriptorProto) -> String {
+public func AccessControl(_ desc:Google.Protobuf.FileDescriptorProto) -> String {
     if let options = GetOptions(desc) {
         switch options.entitiesAccessControl {
         case .internalEntities: return "internal"
@@ -110,18 +110,18 @@ func AccessControl(_ desc:Google.Protobuf.FileDescriptorProto) -> String {
     return "public"
 }
 
-func IsOneOfField(_ desc:Google.Protobuf.FieldDescriptorProto) -> Bool {
+public func IsOneOfField(_ desc:Google.Protobuf.FieldDescriptorProto) -> Bool {
     return desc.hasOneofIndex
 }
 
-func GetLinkedObjects(_ desc:Google.Protobuf.DescriptorProto) -> [Google.Protobuf.LinkedObject] {
+public func GetLinkedObjects(_ desc:Google.Protobuf.DescriptorProto) -> [Google.Protobuf.LinkedObject] {
     if let options = GetOptions(desc), options.linkedObjects.count > 0 {
         return options.linkedObjects
     }
     return []
 }
 
-func AdditionalSchemeName(_ desc:Google.Protobuf.DescriptorProto) -> String? {
+public func AdditionalSchemeName(_ desc:Google.Protobuf.DescriptorProto) -> String? {
     if let options = GetOptions(desc) {
         if options.hasAdditionalClassName, options.additionalClassName != nil {
             return options.additionalClassName
@@ -130,7 +130,7 @@ func AdditionalSchemeName(_ desc:Google.Protobuf.DescriptorProto) -> String? {
     return nil
 }
 
-func GetOneOfField(_ desc:Google.Protobuf.FieldDescriptorProto, parentDesc:Google.Protobuf.DescriptorProto) -> Google.Protobuf.OneofDescriptorProto? {
+public func GetOneOfField(_ desc:Google.Protobuf.FieldDescriptorProto, parentDesc:Google.Protobuf.DescriptorProto) -> Google.Protobuf.OneofDescriptorProto? {
     guard desc.hasOneofIndex, let index = desc.oneofIndex else {
         return nil
     }

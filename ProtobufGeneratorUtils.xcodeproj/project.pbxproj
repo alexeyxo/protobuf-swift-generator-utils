@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"ProtobufGeneratorUtils::ProtobufGeneratorUtilsPackageTests::ProductTarget" /* ProtobufGeneratorUtilsPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_107 /* Build configuration list for PBXAggregateTarget "ProtobufGeneratorUtilsPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_110 /* PBXTargetDependency */,
+			);
+			name = ProtobufGeneratorUtilsPackageTests;
+			productName = ProtobufGeneratorUtilsPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_100 /* Google.Protobuf.Type.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Google.Protobuf.Type.proto.swift */; };
+		OBJ_101 /* Google.Protobuf.Wrappers.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Google.Protobuf.Wrappers.proto.swift */; };
+		OBJ_102 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* RingBuffer.swift */; };
+		OBJ_103 /* UnknownFieldSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* UnknownFieldSet.swift */; };
+		OBJ_104 /* WireFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* WireFormat.swift */; };
+		OBJ_50 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_56 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Package.swift */; };
+		OBJ_62 /* protobuf_swift_generator_utilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* protobuf_swift_generator_utilsTests.swift */; };
+		OBJ_64 /* ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ProtocolBuffers::ProtocolBuffers::Product" /* ProtocolBuffers.framework */; };
+		OBJ_72 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Formatter.swift */; };
+		OBJ_73 /* PluginUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* PluginUtils.swift */; };
+		OBJ_75 /* ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ProtocolBuffers::ProtocolBuffers::Product" /* ProtocolBuffers.framework */; };
+		OBJ_81 /* AbstractMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* AbstractMessage.swift */; };
+		OBJ_82 /* CodedInputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* CodedInputStream.swift */; };
+		OBJ_83 /* CodedOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* CodedOutputStream.swift */; };
+		OBJ_84 /* ConcreateExtensionField.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* ConcreateExtensionField.swift */; };
+		OBJ_85 /* ExtendableMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* ExtendableMessage.swift */; };
+		OBJ_86 /* ExtensionRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* ExtensionRegistry.swift */; };
+		OBJ_87 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Field.swift */; };
+		OBJ_88 /* GeneratedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* GeneratedMessage.swift */; };
+		OBJ_89 /* Google.Protobuf.Any.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Google.Protobuf.Any.proto.swift */; };
+		OBJ_90 /* Google.Protobuf.Api.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Google.Protobuf.Api.proto.swift */; };
+		OBJ_91 /* Google.Protobuf.Compiler.Plugin.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Google.Protobuf.Compiler.Plugin.proto.swift */; };
+		OBJ_92 /* Google.Protobuf.Descriptor.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Google.Protobuf.Descriptor.proto.swift */; };
+		OBJ_93 /* Google.Protobuf.Duration.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Google.Protobuf.Duration.proto.swift */; };
+		OBJ_94 /* Google.Protobuf.Empty.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Google.Protobuf.Empty.proto.swift */; };
+		OBJ_95 /* Google.Protobuf.FieldMask.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Google.Protobuf.FieldMask.proto.swift */; };
+		OBJ_96 /* Google.Protobuf.SourceContext.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Google.Protobuf.SourceContext.proto.swift */; };
+		OBJ_97 /* Google.Protobuf.Struct.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Google.Protobuf.Struct.proto.swift */; };
+		OBJ_98 /* Google.Protobuf.SwiftDescriptor.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Google.Protobuf.SwiftDescriptor.proto.swift */; };
+		OBJ_99 /* Google.Protobuf.Timestamp.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Google.Protobuf.Timestamp.proto.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F263D591FA4AFB200CC7718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ProtocolBuffers::ProtocolBuffers";
+			remoteInfo = ProtocolBuffers;
+		};
+		3F263D5A1FA4AFB200CC7718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ProtocolBuffers::ProtocolBuffers";
+			remoteInfo = ProtocolBuffers;
+		};
+		3F263D5B1FA4AFB200CC7718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ProtobufGeneratorUtils::protobuf-swift-generator-utilsTests";
+			remoteInfo = "protobuf-swift-generator-utilsTests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		OBJ_12 /* protobuf_swift_generator_utilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protobuf_swift_generator_utilsTests.swift; sourceTree = "<group>"; };
+		OBJ_13 /* DerivedData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DerivedData; sourceTree = SOURCE_ROOT; };
+		OBJ_16 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/alexeyxo/protobuf-swift-generator-utils/.build/checkouts/protobuf-swift.git--5934364835411551790/Package.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* AbstractMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractMessage.swift; sourceTree = "<group>"; };
+		OBJ_18 /* CodedInputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodedInputStream.swift; sourceTree = "<group>"; };
+		OBJ_19 /* CodedOutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodedOutputStream.swift; sourceTree = "<group>"; };
+		OBJ_20 /* ConcreateExtensionField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreateExtensionField.swift; sourceTree = "<group>"; };
+		OBJ_21 /* ExtendableMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendableMessage.swift; sourceTree = "<group>"; };
+		OBJ_22 /* ExtensionRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionRegistry.swift; sourceTree = "<group>"; };
+		OBJ_23 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		OBJ_24 /* GeneratedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedMessage.swift; sourceTree = "<group>"; };
+		OBJ_25 /* Google.Protobuf.Any.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.Protobuf.Any.proto.swift; sourceTree = "<group>"; };
+		OBJ_26 /* Google.Protobuf.Api.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.Protobuf.Api.proto.swift; sourceTree = "<group>"; };
+		OBJ_27 /* Google.Protobuf.Compiler.Plugin.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.Protobuf.Compiler.Plugin.proto.swift; sourceTree = "<group>"; };
+		OBJ_28 /* Google.Protobuf.Descriptor.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.Protobuf.Descriptor.proto.swift; sourceTree = "<group>"; };
+		OBJ_29 /* Google.Protobuf.Duration.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.Protobuf.Duration.proto.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Google.Protobuf.Empty.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.Protobuf.Empty.proto.swift; sourceTree = "<group>"; };
+		OBJ_31 /* Google.Protobuf.FieldMask.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.Protobuf.FieldMask.proto.swift; sourceTree = "<group>"; };
+		OBJ_32 /* Google.Protobuf.SourceContext.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.Protobuf.SourceContext.proto.swift; sourceTree = "<group>"; };
+		OBJ_33 /* Google.Protobuf.Struct.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.Protobuf.Struct.proto.swift; sourceTree = "<group>"; };
+		OBJ_34 /* Google.Protobuf.SwiftDescriptor.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.Protobuf.SwiftDescriptor.proto.swift; sourceTree = "<group>"; };
+		OBJ_35 /* Google.Protobuf.Timestamp.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.Protobuf.Timestamp.proto.swift; sourceTree = "<group>"; };
+		OBJ_36 /* Google.Protobuf.Type.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.Protobuf.Type.proto.swift; sourceTree = "<group>"; };
+		OBJ_37 /* Google.Protobuf.Wrappers.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.Protobuf.Wrappers.proto.swift; sourceTree = "<group>"; };
+		OBJ_38 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
+		OBJ_39 /* UnknownFieldSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownFieldSet.swift; sourceTree = "<group>"; };
+		OBJ_40 /* WireFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireFormat.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_8 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		OBJ_9 /* PluginUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginUtils.swift; sourceTree = "<group>"; };
+		"ProtobufGeneratorUtils::ProtobufGeneratorUtils::Product" /* ProtobufGeneratorUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ProtobufGeneratorUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"ProtobufGeneratorUtils::protobuf-swift-generator-utilsTests::Product" /* protobuf_swift_generator_utilsTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = protobuf_swift_generator_utilsTests.xctest; path = "protobuf-swift-generator-utilsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		"ProtocolBuffers::ProtocolBuffers::Product" /* ProtocolBuffers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProtocolBuffers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_64 /* ProtocolBuffers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_75 /* ProtocolBuffers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_10 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* protobuf-swift-generator-utilsTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_11 /* protobuf-swift-generator-utilsTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* protobuf_swift_generator_utilsTests.swift */,
+			);
+			name = "protobuf-swift-generator-utilsTests";
+			path = "Tests/protobuf-swift-generator-utilsTests";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_14 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* ProtocolBuffers 3.0.27 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_15 /* ProtocolBuffers 3.0.27 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* Package.swift */,
+				OBJ_17 /* AbstractMessage.swift */,
+				OBJ_18 /* CodedInputStream.swift */,
+				OBJ_19 /* CodedOutputStream.swift */,
+				OBJ_20 /* ConcreateExtensionField.swift */,
+				OBJ_21 /* ExtendableMessage.swift */,
+				OBJ_22 /* ExtensionRegistry.swift */,
+				OBJ_23 /* Field.swift */,
+				OBJ_24 /* GeneratedMessage.swift */,
+				OBJ_25 /* Google.Protobuf.Any.proto.swift */,
+				OBJ_26 /* Google.Protobuf.Api.proto.swift */,
+				OBJ_27 /* Google.Protobuf.Compiler.Plugin.proto.swift */,
+				OBJ_28 /* Google.Protobuf.Descriptor.proto.swift */,
+				OBJ_29 /* Google.Protobuf.Duration.proto.swift */,
+				OBJ_30 /* Google.Protobuf.Empty.proto.swift */,
+				OBJ_31 /* Google.Protobuf.FieldMask.proto.swift */,
+				OBJ_32 /* Google.Protobuf.SourceContext.proto.swift */,
+				OBJ_33 /* Google.Protobuf.Struct.proto.swift */,
+				OBJ_34 /* Google.Protobuf.SwiftDescriptor.proto.swift */,
+				OBJ_35 /* Google.Protobuf.Timestamp.proto.swift */,
+				OBJ_36 /* Google.Protobuf.Type.proto.swift */,
+				OBJ_37 /* Google.Protobuf.Wrappers.proto.swift */,
+				OBJ_38 /* RingBuffer.swift */,
+				OBJ_39 /* UnknownFieldSet.swift */,
+				OBJ_40 /* WireFormat.swift */,
+			);
+			name = "ProtocolBuffers 3.0.27";
+			path = ".build/checkouts/protobuf-swift.git--5934364835411551790/Source";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"ProtobufGeneratorUtils::protobuf-swift-generator-utilsTests::Product" /* protobuf_swift_generator_utilsTests.xctest */,
+				"ProtobufGeneratorUtils::ProtobufGeneratorUtils::Product" /* ProtobufGeneratorUtils.framework */,
+				"ProtocolBuffers::ProtocolBuffers::Product" /* ProtocolBuffers.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_10 /* Tests */,
+				OBJ_13 /* DerivedData */,
+				OBJ_14 /* Dependencies */,
+				OBJ_41 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* Formatter.swift */,
+				OBJ_9 /* PluginUtils.swift */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"ProtobufGeneratorUtils::ProtobufGeneratorUtils" /* ProtobufGeneratorUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_68 /* Build configuration list for PBXNativeTarget "ProtobufGeneratorUtils" */;
+			buildPhases = (
+				OBJ_71 /* Sources */,
+				OBJ_74 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_76 /* PBXTargetDependency */,
+			);
+			name = ProtobufGeneratorUtils;
+			productName = ProtobufGeneratorUtils;
+			productReference = "ProtobufGeneratorUtils::ProtobufGeneratorUtils::Product" /* ProtobufGeneratorUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"ProtobufGeneratorUtils::SwiftPMPackageDescription" /* ProtobufGeneratorUtilsPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_46 /* Build configuration list for PBXNativeTarget "ProtobufGeneratorUtilsPackageDescription" */;
+			buildPhases = (
+				OBJ_49 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProtobufGeneratorUtilsPackageDescription;
+			productName = ProtobufGeneratorUtilsPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"ProtobufGeneratorUtils::protobuf-swift-generator-utilsTests" /* protobuf-swift-generator-utilsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_58 /* Build configuration list for PBXNativeTarget "protobuf-swift-generator-utilsTests" */;
+			buildPhases = (
+				OBJ_61 /* Sources */,
+				OBJ_63 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_65 /* PBXTargetDependency */,
+			);
+			name = "protobuf-swift-generator-utilsTests";
+			productName = protobuf_swift_generator_utilsTests;
+			productReference = "ProtobufGeneratorUtils::protobuf-swift-generator-utilsTests::Product" /* protobuf_swift_generator_utilsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"ProtocolBuffers::ProtocolBuffers" /* ProtocolBuffers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_77 /* Build configuration list for PBXNativeTarget "ProtocolBuffers" */;
+			buildPhases = (
+				OBJ_80 /* Sources */,
+				OBJ_105 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProtocolBuffers;
+			productName = ProtocolBuffers;
+			productReference = "ProtocolBuffers::ProtocolBuffers::Product" /* ProtocolBuffers.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"ProtocolBuffers::SwiftPMPackageDescription" /* ProtocolBuffersPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_52 /* Build configuration list for PBXNativeTarget "ProtocolBuffersPackageDescription" */;
+			buildPhases = (
+				OBJ_55 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProtocolBuffersPackageDescription;
+			productName = ProtocolBuffersPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "ProtobufGeneratorUtils" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"ProtobufGeneratorUtils::SwiftPMPackageDescription" /* ProtobufGeneratorUtilsPackageDescription */,
+				"ProtocolBuffers::SwiftPMPackageDescription" /* ProtocolBuffersPackageDescription */,
+				"ProtobufGeneratorUtils::protobuf-swift-generator-utilsTests" /* protobuf-swift-generator-utilsTests */,
+				"ProtobufGeneratorUtils::ProtobufGeneratorUtils" /* ProtobufGeneratorUtils */,
+				"ProtocolBuffers::ProtocolBuffers" /* ProtocolBuffers */,
+				"ProtobufGeneratorUtils::ProtobufGeneratorUtilsPackageTests::ProductTarget" /* ProtobufGeneratorUtilsPackageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_50 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_56 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_62 /* protobuf_swift_generator_utilsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_72 /* Formatter.swift in Sources */,
+				OBJ_73 /* PluginUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_81 /* AbstractMessage.swift in Sources */,
+				OBJ_82 /* CodedInputStream.swift in Sources */,
+				OBJ_83 /* CodedOutputStream.swift in Sources */,
+				OBJ_84 /* ConcreateExtensionField.swift in Sources */,
+				OBJ_85 /* ExtendableMessage.swift in Sources */,
+				OBJ_86 /* ExtensionRegistry.swift in Sources */,
+				OBJ_87 /* Field.swift in Sources */,
+				OBJ_88 /* GeneratedMessage.swift in Sources */,
+				OBJ_89 /* Google.Protobuf.Any.proto.swift in Sources */,
+				OBJ_90 /* Google.Protobuf.Api.proto.swift in Sources */,
+				OBJ_91 /* Google.Protobuf.Compiler.Plugin.proto.swift in Sources */,
+				OBJ_92 /* Google.Protobuf.Descriptor.proto.swift in Sources */,
+				OBJ_93 /* Google.Protobuf.Duration.proto.swift in Sources */,
+				OBJ_94 /* Google.Protobuf.Empty.proto.swift in Sources */,
+				OBJ_95 /* Google.Protobuf.FieldMask.proto.swift in Sources */,
+				OBJ_96 /* Google.Protobuf.SourceContext.proto.swift in Sources */,
+				OBJ_97 /* Google.Protobuf.Struct.proto.swift in Sources */,
+				OBJ_98 /* Google.Protobuf.SwiftDescriptor.proto.swift in Sources */,
+				OBJ_99 /* Google.Protobuf.Timestamp.proto.swift in Sources */,
+				OBJ_100 /* Google.Protobuf.Type.proto.swift in Sources */,
+				OBJ_101 /* Google.Protobuf.Wrappers.proto.swift in Sources */,
+				OBJ_102 /* RingBuffer.swift in Sources */,
+				OBJ_103 /* UnknownFieldSet.swift in Sources */,
+				OBJ_104 /* WireFormat.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_110 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "ProtobufGeneratorUtils::protobuf-swift-generator-utilsTests" /* protobuf-swift-generator-utilsTests */;
+			targetProxy = 3F263D5B1FA4AFB200CC7718 /* PBXContainerItemProxy */;
+		};
+		OBJ_65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "ProtocolBuffers::ProtocolBuffers" /* ProtocolBuffers */;
+			targetProxy = 3F263D5A1FA4AFB200CC7718 /* PBXContainerItemProxy */;
+		};
+		OBJ_76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "ProtocolBuffers::ProtocolBuffers" /* ProtocolBuffers */;
+			targetProxy = 3F263D591FA4AFB200CC7718 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_109 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ProtobufGeneratorUtils.xcodeproj/protobuf_swift_generator_utilsTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = "protobuf-swift-generator-utilsTests";
+			};
+			name = Debug;
+		};
+		OBJ_60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ProtobufGeneratorUtils.xcodeproj/protobuf_swift_generator_utilsTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = "protobuf-swift-generator-utilsTests";
+			};
+			name = Release;
+		};
+		OBJ_69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ProtobufGeneratorUtils.xcodeproj/ProtobufGeneratorUtils_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ProtobufGeneratorUtils;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = ProtobufGeneratorUtils;
+			};
+			name = Debug;
+		};
+		OBJ_70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ProtobufGeneratorUtils.xcodeproj/ProtobufGeneratorUtils_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ProtobufGeneratorUtils;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = ProtobufGeneratorUtils;
+			};
+			name = Release;
+		};
+		OBJ_78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ProtobufGeneratorUtils.xcodeproj/ProtocolBuffers_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ProtocolBuffers;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = ProtocolBuffers;
+			};
+			name = Debug;
+		};
+		OBJ_79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ProtobufGeneratorUtils.xcodeproj/ProtocolBuffers_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ProtocolBuffers;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = ProtocolBuffers;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_107 /* Build configuration list for PBXAggregateTarget "ProtobufGeneratorUtilsPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_108 /* Debug */,
+				OBJ_109 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "ProtobufGeneratorUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_46 /* Build configuration list for PBXNativeTarget "ProtobufGeneratorUtilsPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_47 /* Debug */,
+				OBJ_48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_52 /* Build configuration list for PBXNativeTarget "ProtocolBuffersPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_53 /* Debug */,
+				OBJ_54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_58 /* Build configuration list for PBXNativeTarget "protobuf-swift-generator-utilsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_59 /* Debug */,
+				OBJ_60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_68 /* Build configuration list for PBXNativeTarget "ProtobufGeneratorUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_69 /* Debug */,
+				OBJ_70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_77 /* Build configuration list for PBXNativeTarget "ProtocolBuffers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_78 /* Debug */,
+				OBJ_79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
