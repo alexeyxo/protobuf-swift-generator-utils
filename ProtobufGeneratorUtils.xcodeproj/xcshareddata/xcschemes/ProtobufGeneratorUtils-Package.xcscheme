@@ -43,16 +43,6 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ProtobufGeneratorUtils::protobuf-swift-generator-utilsTests"
-               BuildableName = "protobuf-swift-generator-utilsTests.xctest"
-               BlueprintName = "protobuf-swift-generator-utilsTests"
-               ReferencedContainer = "container:ProtobufGeneratorUtils.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>
