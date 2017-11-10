@@ -172,7 +172,7 @@ public final class CodeWriter {
         if self.file.hasPackage {
             fileName = self.file.package.capitalizedCamelCase() + "."
         }
-        fileName += self.file.name.capitalizedCamelCase().replacingOccurrences(of: ".Proto", with: "")
+        fileName += self.file.name.components(separatedBy: "/").last!.capitalizedCamelCase().replacingOccurrences(of: ".Proto", with: "")
         return fileName + self.suffix + ".swift"
     }
     var summaryIndent:String = ""
