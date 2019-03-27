@@ -50,9 +50,27 @@ public extension String {
         return returned
     }
     
+    fileprivate func removeUnderscore() -> String {
+        var returned = ""
+        var shouldNextUppercased = false
+        self.forEach({
+            if shouldNextUppercased {
+                returned += String($0).uppercased()
+                shouldNextUppercased = false
+            } else if String($0).uppercased() != "_" {
+                returned += String($0)
+            }
+            if String($0).uppercased() == "_" {
+                shouldNextUppercased = true
+            }
+        })
+        return returned
+    }
+    
     public func capitalizedCamelCase(separator:String = ".") -> String {
-        let components = self.components(separatedBy: CharacterSet.alphanumerics.inverted).filter({ $0 != ""})
-        let separator = self.components(separatedBy: ".").count > 1 ? separator : ""
+        var newStr = self.removeUnderscore()
+        let components = newStr.components(separatedBy: CharacterSet.alphanumerics.inverted).filter({ $0 != ""})
+        let separator = newStr.components(separatedBy: ".").count > 1 ? separator : ""
         let returned = components.map({
             return $0.protoCamelCase()
         }).joined(separator: separator)
@@ -62,8 +80,9 @@ public extension String {
         return returned
     }
     public func oldCapitalizedCamelCase(separator:String = ".") -> String {
-        let components = self.components(separatedBy: CharacterSet.alphanumerics.inverted).filter({ $0 != ""})
-        let separator = self.components(separatedBy: ".").count > 1 ? separator : ""
+        var newStr = self.removeUnderscore()
+        let components = newStr.components(separatedBy: CharacterSet.alphanumerics.inverted).filter({ $0 != ""})
+        let separator = newStr.components(separatedBy: ".").count > 1 ? separator : ""
         let returned = components.map({
             return $0.tempProtoCamelCase()
         }).joined(separator: separator)
